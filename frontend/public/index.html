@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Simple Crowdfunding DApp</title>
+    <link rel="stylesheet" href="../src/styles/app.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div>
+          <h1>Simple Crowdfunding</h1>
+          <p class="subtitle">Ethereum Testnet • MetaMask</p>
+        </div>
+        <button id="connectBtn" class="btn">Connect MetaMask</button>
+      </header>
+
+      <section class="panel">
+        <div class="row">
+          <div>
+            <div class="label">Wallet</div>
+            <div id="walletAddress" class="value">Not connected</div>
+          </div>
+          <div>
+            <div class="label">Network</div>
+            <div id="network" class="value">Unknown</div>
+          </div>
+          <div>
+            <div class="label">ETH Balance</div>
+            <div id="ethBalance" class="value">0</div>
+          </div>
+          <div>
+            <div class="label">Reward Balance</div>
+            <div id="tokenBalance" class="value">0</div>
+          </div>
+        </div>
+        <div id="networkWarning" class="warning hidden">
+          Please switch to Sepolia or a local network.
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Create Campaign</h2>
+        <div class="form">
+          <input id="title" placeholder="Campaign title" />
+          <input id="goal" placeholder="Goal in ETH" />
+          <input id="duration" placeholder="Duration in seconds" />
+          <button id="createBtn" class="btn">Create</button>
+        </div>
+        <div id="createStatus" class="status"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Contribute</h2>
+        <div class="form">
+          <input id="campaignId" placeholder="Campaign ID" />
+          <input id="amount" placeholder="Amount in ETH" />
+          <button id="contributeBtn" class="btn">Contribute</button>
+        </div>
+        <div id="contributeStatus" class="status"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Finalize / Refund</h2>
+        <div class="form">
+          <input id="finalizeId" placeholder="Campaign ID" />
+          <button id="finalizeBtn" class="btn">Finalize</button>
+          <button id="refundBtn" class="btn secondary">Refund</button>
+        </div>
+        <div id="finalizeStatus" class="status"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Campaign Info</h2>
+        <div class="form">
+          <input id="infoId" placeholder="Campaign ID" />
+          <button id="infoBtn" class="btn">Load</button>
+        </div>
+        <pre id="campaignInfo" class="code"></pre>
+      </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/ethers@6.10.0/dist/ethers.umd.min.js"></script>
+    <script src="../src/app.js"></script>
+  </body>
+</html>
+
