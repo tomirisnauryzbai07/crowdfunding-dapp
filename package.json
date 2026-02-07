@@ -1,0 +1,27 @@
+{
+  "name": "crowdfunding-dapp",
+  "version": "1.0.0",
+  "description": "Simple Crowdfunding App for Blockchain Technologies 1 Final Project",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomirisnauryzbai07/crowdfunding-dapp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/tomirisnauryzbai07/crowdfunding-dapp/issues"
+  },
+  "homepage": "https://github.com/tomirisnauryzbai07/crowdfunding-dapp#readme",
+  "devDependencies": {
+    "hardhat": "^3.1.7"
+  }
+}
