@@ -12,7 +12,7 @@ async function main() {
   const crowdfunding = await Crowdfunding.deploy(await rewardToken.getAddress());
   await crowdfunding.waitForDeployment();
 
-  
+  // Set minter to crowdfunding contract
   const tx = await rewardToken.setMinter(await crowdfunding.getAddress());
   await tx.wait();
 

@@ -1,30 +1,21 @@
 {
-  "name": "crowdfunding-dapp",
+  "name": "simple-crowdfunding-dapp",
   "version": "1.0.0",
-  "description": "Simple Crowdfunding App for Blockchain Technologies 1 Final Project",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
+  "private": true,
+  "description": "Simple crowdfunding DApp for Blockchain 1 final project",
   "scripts": {
     "compile": "hardhat compile",
     "test": "hardhat test",
     "deploy": "hardhat run scripts/deploy.js --network sepolia",
-    "deploy:local": "hardhat run scripts/deploy.js --network localhost"
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "seed:local": "hardhat run scripts/seed.js --network localhost",
+    "abi:sync": "node scripts/abi-sync.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tomirisnauryzbai07/crowdfunding-dapp.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/tomirisnauryzbai07/crowdfunding-dapp/issues"
-  },
-  "homepage": "https://github.com/tomirisnauryzbai07/crowdfunding-dapp#readme",
   "devDependencies": {
-    "hardhat": "^3.1.7"
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
   }
 }
