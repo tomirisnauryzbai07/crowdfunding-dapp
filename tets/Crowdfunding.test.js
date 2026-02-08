@@ -37,7 +37,7 @@ describe("Crowdfunding", function () {
     expect(info.totalRaised).to.equal(ethers.parseEther("0.5"));
 
     const balance = await token.balanceOf(alice.address);
-    // 0.5 ETH * 1000 = 500 tokens
+    
     expect(balance).to.equal(ethers.parseUnits("500", 18));
   });
 
@@ -45,7 +45,7 @@ describe("Crowdfunding", function () {
     const { owner, alice, crowdfunding } = await deployFixture();
 
     const goal = ethers.parseEther("1");
-    const duration = 1; // 1 second
+    const duration = 1;
 
     const tx = await crowdfunding.createCampaign("Goal", goal, duration);
     const receipt = await tx.wait();
