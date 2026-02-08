@@ -36,7 +36,8 @@
           </div>
         </div>
         <div id="networkWarning" class="warning hidden">
-          Please switch to Sepolia or a local network.
+          <div>Please switch to Sepolia or a local network.</div>
+          <button id="switchBtn" class="btn secondary">Switch to Localhost</button>
         </div>
       </section>
 
@@ -79,10 +80,18 @@
         </div>
         <pre id="campaignInfo" class="code"></pre>
       </section>
+
+      <section class="panel">
+        <h2>Campaign List</h2>
+        <div class="form">
+          <button id="listBtn" class="btn">Load All Campaigns</button>
+        </div>
+        <div id="listStatus" class="status"></div>
+        <div id="campaignList" class="list"></div>
+      </section>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/ethers@6.10.0/dist/ethers.umd.min.js"></script>
     <script src="../src/app.js"></script>
   </body>
 </html>
-
