@@ -4,33 +4,51 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Simple Crowdfunding DApp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../src/styles/app.css" />
   </head>
   <body>
     <div class="app">
       <header class="header">
-        <div>
+        <div class="hero">
+          <div class="eyebrow">Blockchain Technologies 1</div>
           <h1>Simple Crowdfunding</h1>
-          <p class="subtitle">Ethereum Testnet • MetaMask</p>
+          <p class="subtitle">
+            A minimal on-chain crowdfunding demo with reward tokens. Built for
+            Ethereum test networks and MetaMask.
+          </p>
+          <div class="chips">
+            <span class="chip">Solidity</span>
+            <span class="chip">MetaMask</span>
+            <span class="chip">Testnet</span>
+          </div>
         </div>
-        <button id="connectBtn" class="btn">Connect MetaMask</button>
+        <div class="hero-actions">
+          <button id="connectBtn" class="btn">Connect MetaMask</button>
+          <div class="help-text">Connect your wallet to start.</div>
+        </div>
       </header>
 
       <section class="panel">
-        <div class="row">
-          <div>
+        <div class="stats">
+          <div class="stat">
             <div class="label">Wallet</div>
             <div id="walletAddress" class="value">Not connected</div>
           </div>
-          <div>
+          <div class="stat">
             <div class="label">Network</div>
             <div id="network" class="value">Unknown</div>
           </div>
-          <div>
+          <div class="stat">
             <div class="label">ETH Balance</div>
             <div id="ethBalance" class="value">0</div>
           </div>
-          <div>
+          <div class="stat">
             <div class="label">Reward Balance</div>
             <div id="tokenBalance" class="value">0</div>
           </div>
