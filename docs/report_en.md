@@ -10,8 +10,8 @@
 
 **Students (Group):**
 - Nauryzbay Tomiris (SE-2436)
-- Aisulu Bagdat (SE-2435)
-- Medina Neznayu (SE-2435)
+- Aisulu Azimkhan (SE-2437)
+- Medina Klyumova (SE-2437)
 
 **Year:** 2nd year
 
