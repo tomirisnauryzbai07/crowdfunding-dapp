@@ -58,7 +58,7 @@ No mainnet ETH or real cryptocurrency is used.
 All requirements are implemented in this project.
 
 ## 4. Architecture
-**Frontend (JS/HTML/CSS)** → **MetaMask** → **Ethereum Testnet** → **Smart Contracts**
+**Frontend (JS/HTML/CSS)** → **MetaMask** → **Local Ethereum Network (Localhost 8545)** → **Smart Contracts**
 
 Contracts:
 - `RewardToken.sol` (ERC-20)
@@ -92,21 +92,15 @@ The frontend uses `ethers.js` with MetaMask:
 The UI also lists all campaigns and shows wallet balances.
 
 ## 7. Deployment & Execution
-### Local Demo (Recommended for development)
+### Local Demo (Used for defense)
 1. `npx hardhat node`
 2. `npm run deploy:local`
 3. Paste contract addresses into `frontend/src/app.js`
 4. Open `frontend/public/index.html`
 5. Add network `Localhost 8545` in MetaMask (Chain ID 31337)
 
-### Sepolia Testnet (for submission)
-1. Create `.env` with RPC_URL and PRIVATE_KEY
-2. Get Sepolia ETH from a faucet
-3. `npm run deploy`
-4. Paste addresses into `frontend/src/app.js`
-
 ## 8. Test ETH
-Test ETH is obtained only from faucets on Sepolia.
+Test ETH is provided locally by the Hardhat node (10,000 ETH per account).
 Mainnet ETH is not used and is prohibited by course rules.
 
 ## 9. Design Decisions

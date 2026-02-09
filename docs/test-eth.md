@@ -1,9 +1,5 @@
 # Test ETH
 
-## Sepolia faucets (free test ETH)
-Use any faucet below and send ETH to your test account.
-If one faucet requires mainnet balance, try another.
-
 ## Local testing
 For local demo, use Hardhat:
 - `npx hardhat node`
