@@ -11,4 +11,3 @@
 
 ## Local vs Sepolia
 - Localhost used for fast demo and development.
-- Sepolia used for final submission (testnet requirement).
