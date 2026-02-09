@@ -1,12 +1,12 @@
 # Architecture Overview
 
 ## High-level
-Frontend (JS) → MetaMask → Ethereum Testnet (Sepolia or Localhost) → Smart Contracts
+Frontend (JS) → MetaMask → Local Ethereum Network (Localhost 8545) → Smart Contracts
 
 ## Components
 - **Frontend (HTML/JS/CSS)**: UI to create campaigns, contribute, finalize, refund, and view balances.
 - **MetaMask**: wallet provider and transaction signer.
-- **Ethereum Testnet**: Sepolia for submission, Localhost 8545 for local demo.
+- **Ethereum Local Network**: Localhost 8545 for demonstration.
 - **Smart Contracts**:
   - `RewardToken.sol` (ERC-20): mints rewards on contribution.
   - `Crowdfunding.sol`: campaign lifecycle + ETH handling.
@@ -22,6 +22,6 @@ Frontend (JS) → MetaMask → Ethereum Testnet (Sepolia or Localhost) → Smart
    - If not: refunds available via `refund`.
 
 ## Security & Constraints
-- Only testnet ETH used.
+- Only local test ETH used.
 - Token has no real value and is for education only.
 - Refunds only if campaign failed and finalized.
